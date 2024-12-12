@@ -1,11 +1,13 @@
 import { Text, View } from "react-native";
 import Login from "../components/Login";
 import { auth } from "./../configs/FirebaseConfig";
-import { Redirect } from "expo-router";
+import { Redirect, useRouter } from "expo-router";
 import { useEffect, useState } from "react";
 import { onAuthStateChanged } from "firebase/auth";
 
 export default function Index() {
+  const router = useRouter();
+
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -13,6 +15,10 @@ export default function Index() {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       setUser(user);
       setLoading(false);
+      if (user) {
+        // Redirect to "my trip" page when the user is authenticated
+        router.push("/mytrip");
+      }
     });
     return () => unsubscribe();
   }, []);

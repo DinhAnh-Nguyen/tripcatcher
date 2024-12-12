@@ -33,6 +33,9 @@ export default function SignIn() {
       .then((userCredential) => {
         const user = userCredential.user;
         console.log(user);
+        console.log("Start Login:", new Date().toISOString());
+        console.log("Sign-In Successful:", new Date().toISOString());
+        console.log("Redirecting:", new Date().toISOString());
       })
       .catch((error) => {
         const errorCode = error.code;
