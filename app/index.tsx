@@ -13,7 +13,7 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      {user ? <Redirect href={"/_sitemap"} /> : <Login />}
+      {user ? <Redirect href="/mytrip" /> : <Login />}
     </View>
   );
 }
