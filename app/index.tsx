@@ -2,9 +2,25 @@ import { Text, View } from "react-native";
 import Login from "../components/Login";
 import { auth } from "./../configs/FirebaseConfig";
 import { Redirect } from "expo-router";
+import { useEffect, useState } from "react";
+import { onAuthStateChanged } from "firebase/auth";
 
 export default function Index() {
-  const user = auth.currentUser;
+  const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      setUser(user);
+      setLoading(false);
+    });
+    return () => unsubscribe();
+  }, []);
+
+  if (loading) {
+    return <Text>Loading...</Text>; // Show a loading indicator
+  }
+
   return (
     <View
       style={{
@@ -13,7 +29,7 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      {user ? <Redirect href="/mytrip" /> : <Login />}
+      {user ? <Redirect href={"/mytrip"} /> : <Login />}
     </View>
   );
 }
