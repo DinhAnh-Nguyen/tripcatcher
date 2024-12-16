@@ -1,23 +1,41 @@
-import { View, Text } from "react-native";
-import React, { useContext, useEffect } from "react";
-import { useRouter } from "expo-router";
-import { GooglePlacesAutocomplete } from "react-native-google-places-autocomplete";
-import { CreateTripContext } from "./../../context/CreateTripContext";
+import { View, Text } from 'react-native'
+import React, { useContext, useEffect } from 'react'
+import { useNavigation, useRouter } from 'expo-router'
+import { Colors } from '../../constants/Colors';
+import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
+import { CreateTripContext } from './../../context/CreateTripContext'
 export default function SearchPlace() {
+
+  const navigation = useNavigation();
   const { tripData, setTripData } = useContext(CreateTripContext);
   const router = useRouter();
+  useEffect(() => {
+    navigation.setOptions({
+      headerShown: true,
+      headerTransparent: true,
+      headerTitle: 'Search'
+    })
+  }, []);
 
   useEffect(() => {
     console.log(tripData);
-  }),
-    [tripData];
+  }), [tripData]
 
   return (
-    <View>
+    <View
+      style={{
+        padding: 25,
+        paddingTop: 75,
+        backgroundColor: Colors.WHITE,
+        height: '100%'
+      }}
+    >
+
+
       <GooglePlacesAutocomplete
-        placeholder="Search Place"
+        placeholder='Search Place'
         fetchDetails={true}
-        onFail={(error) => console.log(error)}
+        onFail={error => console.log(error)}
         onPress={(data, details = null) => {
           // 'details' is provided when fetchDetails = true
           setTripData({
@@ -25,17 +43,28 @@ export default function SearchPlace() {
               name: data.description,
               coordinates: details?.geometry.location,
               photoRef: details?.photos[0]?.photo_reference,
-              url: details?.url,
-            },
+              url: details?.url
+            }
           });
 
-          router.push("/create-trip/select-traveler");
+          router.push('/create-trip/select-traveler')
+
         }}
         query={{
           key: process.env.EXPO_PUBLIC_GOOGLE_MAP_KEY,
-          language: "en",
+          language: 'en',
         }}
+        styles={{
+          textInputContainer: {
+            borderWidth: 1,
+            borderRadius: 5,
+            marginTop: 25
+          }
+        }}
+
+
       />
+
     </View>
-  );
+  )
 }
