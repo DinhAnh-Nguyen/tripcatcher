@@ -9,12 +9,10 @@ export default function Index() {
   const router = useRouter();
 
   const [user, setUser] = useState(null);
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       setUser(user);
-      setLoading(false);
       if (user) {
         // Redirect to "my trip" page when the user is authenticated
         router.push("/mytrip");
@@ -22,10 +20,6 @@ export default function Index() {
     });
     return () => unsubscribe();
   }, []);
-
-  if (loading) {
-    return <Text>Loading...</Text>; // Show a loading indicator
-  }
 
   return (
     <View
@@ -35,6 +29,8 @@ export default function Index() {
         alignItems: "center",
       }}
     >
+      <Text>TripCatcher</Text>
+      <Text>Hello Fellow Traveller!</Text>
       {user ? <Redirect href={"/mytrip"} /> : <Login />}
     </View>
   );
