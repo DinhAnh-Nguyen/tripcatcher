@@ -3,6 +3,8 @@ import React, { useContext, useEffect } from "react";
 import { useRouter } from "expo-router";
 import { GooglePlacesAutocomplete } from "react-native-google-places-autocomplete";
 import { CreateTripContext } from "./../../context/CreateTripContext";
+import 'react-native-get-random-values';
+
 export default function SearchPlace() {
   const { tripData, setTripData } = useContext(CreateTripContext);
   const router = useRouter();
