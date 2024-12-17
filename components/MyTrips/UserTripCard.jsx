@@ -40,17 +40,14 @@ export default function UserTripCard({trip}) {
         />
         <View>
             <Text style={{
-                fontFamily:'outfit-medium',
                 fontSize:18,
             }}>{trip.tripPlan?.travelPlan?.location}</Text>
             <Text style={{
-                fontFamily:'outfit',
                 fontSize:14,
                 color:Colors.GRAY
             }}>{moment(formatData(trip.tripData).startDate).format('DD MMM yyyy')}</Text>
             <Text
             style={{
-                fontFamily:'outfit',
                 fontSize:14,
                 color:Colors.GRAY
             }}>Traveling: {formatData(trip.tripData).traveler.title}</Text>

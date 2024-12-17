@@ -48,7 +48,6 @@ export default function MyTrip() {
       }}
       >
         <Text style={{
-          fontFamily:'outfit-bold',
           fontSize:35
         }}>My Trips</Text>
         <TouchableOpacity onPress={()=>router.push('/create-trip/search-place')}>

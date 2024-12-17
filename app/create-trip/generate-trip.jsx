@@ -63,14 +63,12 @@ export default function GenerateTrip() {
             height: '100%'
         }}>
             <Text style={{
-                fontFamily: 'outfit-bold',
                 fontSize: 35,
                 textAlign: 'center'
             }}>
                 Please Wait...
             </Text>
             <Text style={{
-                fontFamily: 'outfit-medium',
                 fontSize: 20,
                 textAlign: 'center',
                 marginTop: 40
@@ -88,7 +86,6 @@ export default function GenerateTrip() {
             />
 
             <Text style={{
-                fontFamily: 'outfit',
                 color: Colors.GRAY,
                 fontSize: 20,
                 textAlign: 'center'

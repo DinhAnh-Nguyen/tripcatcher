@@ -37,7 +37,6 @@ export default function UserTripList({userTrips}) {
         />}
         <View style={{marginTop:10}}>
             <Text style={{
-                fontFamily:'outfit-medium',
                 fontSize:24
             }}>{userTrips[0]?.tripPlan?.travelPlan?.location}</Text>
             <View style={{
@@ -46,13 +45,11 @@ export default function UserTripList({userTrips}) {
                 justifyContent:'space-between',marginTop:5
             }}>
             <Text style={{
-                fontFamily:'outfit',
                 fontSize:17,
                 color:Colors.GRAY
             }}>{moment(LatestTrip.startDate).format('DD MMM yyyy')}</Text>
 
             <Text style={{
-                fontFamily:'outfit',
                 fontSize:17,
                 color:Colors.GRAY
             }}>🚌 {LatestTrip.traveler.title}</Text>
@@ -70,7 +67,6 @@ export default function UserTripList({userTrips}) {
                 <Text style={{
                     color:Colors.WHITE,
                     textAlign:'center',
-                    fontFamily:'outfit-medium',
                     fontSize:15
                 }}>See your plan</Text>
             </TouchableOpacity>

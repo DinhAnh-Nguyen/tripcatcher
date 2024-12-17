@@ -62,7 +62,6 @@ export default function SelectDates() {
     }}
     >
       <Text style={{
-        fontFamily:'outfit-bold',
         fontSize:35,
         marginTop:20
       }}>Travel Dates</Text>
@@ -97,7 +96,6 @@ export default function SelectDates() {
         <Text style={{
           textAlign:'center',
           color:Colors.WHITE,
-          fontFamily:'outfit-medium',
           fontSize:20
         }}>Continue</Text>
       </TouchableOpacity>

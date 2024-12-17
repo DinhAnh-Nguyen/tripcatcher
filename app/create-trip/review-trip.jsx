@@ -29,7 +29,6 @@ export default function ReviewTrip() {
         height:'100%'
     }}>
       <Text style={{
-        fontFamily:'outfit-bold',
         fontSize:35,
         marginTop:20
       }}>Review your trip</Text>
@@ -38,7 +37,6 @@ export default function ReviewTrip() {
         marginTop:20
       }}>
         <Text style={{
-            fontFamily:'outfit-bold',
             fontSize:20
         }}>Before generating your trip , please review your selection</Text>
       
@@ -54,12 +52,10 @@ export default function ReviewTrip() {
       }}>📍</Text>
       <View>
         <Text style={{
-            fontFamily:'outfit',
             fontSize:17,
             color:Colors.GRAY
         }}>Destination</Text>
         <Text style={{
-            fontFamily:'outfit-medium',
             fontSize:20
         }}>{tripData?.locationInfo?.name}</Text>
 
@@ -78,12 +74,10 @@ export default function ReviewTrip() {
       }}>🗓️</Text>
       <View>
         <Text style={{
-            fontFamily:'outfit',
             fontSize:17,
             color:Colors.GRAY
         }}>Travel Date</Text>
         <Text style={{
-            fontFamily:'outfit-medium',
             fontSize:20
         }}>{moment(tripData?.startDate).format('DD MMM')
         +" To "+
@@ -106,12 +100,10 @@ export default function ReviewTrip() {
       }}>🚌</Text>
       <View>
         <Text style={{
-            fontFamily:'outfit',
             fontSize:17,
             color:Colors.GRAY
         }}>Who is Traveling</Text>
         <Text style={{
-            fontFamily:'outfit-medium',
             fontSize:20
         }}>{tripData?.traveler?.title}
         </Text>
@@ -131,12 +123,10 @@ export default function ReviewTrip() {
       }}>💰</Text>
       <View>
         <Text style={{
-            fontFamily:'outfit',
             fontSize:17,
             color:Colors.GRAY
         }}>Budget</Text>
         <Text style={{
-            fontFamily:'outfit-medium',
             fontSize:20
         }}>{tripData?.budget}
         </Text>
@@ -158,7 +148,6 @@ export default function ReviewTrip() {
         <Text style={{
           textAlign:'center',
           color:Colors.WHITE,
-          fontFamily:'outfit-medium',
           fontSize:20,
         }}>
             Build My trip</Text>

@@ -33,7 +33,6 @@ export default function HotelCard({item}) {
             padding:5
         }}>
             <Text style={{
-                fontFamily:'outfit-medium',
                 fontSize:17,
                 
             }}>{item.hotelName}</Text>
@@ -44,10 +43,8 @@ export default function HotelCard({item}) {
                 justifyContent:'space-between'
             }}>
                 <Text style={{
-                    fontFamily:'outfit'
                 }}>⭐ {item.rating}</Text>
                   <Text style={{
-                    fontFamily:'outfit'
                 }}>💰 {item.price}</Text>
             </View>
         </View>

@@ -37,11 +37,9 @@ export default function PlaceCard({place}) {
            marginTop:5
        }}>
        <Text style={{
-           fontFamily:'outfit-bold',
            fontSize:20
        }}>{place?.placeName}</Text>
        <Text style={{
-           fontFamily:'outfit',
            fontSize:14,
            color:Colors.GRAY
        }}>{place.placeDetails}</Text>
@@ -53,17 +51,13 @@ export default function PlaceCard({place}) {
        }}>
        <View>
            <Text style={{
-               fontFamily:'outfit',
                fontSize:17,marginTop:5
            }}>🎟️ Ticket Price: 
            <Text style={{
-               fontFamily:'outfit-bold'
            }}> {place?.ticketPricing}</Text></Text>
                <Text style={{
-               fontFamily:'outfit',
                fontSize:17,marginTop:5
            }}>⏱️ Time to Travel:  <Text style={{
-               fontFamily:'outfit-bold'
            }}>{place?.timeToTravel}</Text></Text>
        </View>
            <TouchableOpacity style={{

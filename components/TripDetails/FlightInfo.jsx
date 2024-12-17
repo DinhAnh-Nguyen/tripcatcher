@@ -19,7 +19,6 @@ export default function FlightInfo({flightData}) {
             alignItems:'center'
         }}>
         <Text style={{
-        fontFamily:'outfit-bold',
         fontSize:20
       }}>✈️ Flights</Text>
         <TouchableOpacity style={{
@@ -32,19 +31,16 @@ export default function FlightInfo({flightData}) {
         <Text style={{
             textAlign:'center',
             color:Colors.WHITE,
-            fontFamily:'outfit',
            
         }}>Book Here</Text>
       </TouchableOpacity>
         </View>
      
       <Text style={{
-        fontFamily:'outfit',
         fontSize:17,
         marginTop:7
       }}>Airline: Delta</Text>
       <Text style={{
-        fontFamily:'outfit',
         fontSize:17
       }}>Price: {flightData.price}</Text>
      

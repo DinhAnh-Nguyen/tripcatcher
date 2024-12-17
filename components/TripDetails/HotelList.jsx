@@ -13,7 +13,6 @@ export default function HotelList({hotelList}) {
         marginTop:20
     }}>
       <Text style={{
-        fontFamily:'outfit-bold',
         fontSize:20
       }}>🏨 Hotel Recommendation</Text>
 

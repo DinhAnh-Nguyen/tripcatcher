@@ -21,14 +21,13 @@ export default function StartNewTripCard() {
      <Ionicons name="location-sharp" size={30} color="black" />
      <Text style={{
         fontSize:25,
-        fontFamily:'outfit-medium'
      }}>
         No trips planned yet
      </Text>
 
      <Text style={{
         fontSize:20,
-        fontFamily:'outfit',
+
         textAlign:'center',
         color:Colors.GRAY
      }}>
@@ -46,7 +45,6 @@ export default function StartNewTripCard() {
      >
         <Text style={{
             color:Colors.WHITE,
-            fontFamily:'outfit-medium',
             fontSize:17
         }}>Start a new trip</Text>
      </TouchableOpacity>

@@ -38,7 +38,6 @@ export default function SelectTraveler() {
     }}>
       <Text style={{
         fontSize:35,
-        fontFamily:'outfit-bold',
         marginTop:20
       }}>Who's Traveling </Text>
 
@@ -47,7 +46,6 @@ export default function SelectTraveler() {
         marginTop:20
       }}>
         <Text style={{
-          fontFamily:'outfit-bold',
           fontSize:23
         }}>Choose your traveles</Text>
 
@@ -84,7 +82,6 @@ export default function SelectTraveler() {
         <Text style={{
           textAlign:'center',
           color:Colors.WHITE,
-          fontFamily:'outfit-medium',
           fontSize:20
         }}>Continue</Text>
         </Link>

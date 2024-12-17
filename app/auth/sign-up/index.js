@@ -65,7 +65,6 @@ export default function SignUp() {
         <Ionicons name="arrow-back" size={24} color="black" />
       </TouchableOpacity>
       <Text style={{
-        fontFamily:'outfit-bold',
         fontSize:30,
         marginTop:30
       }}>Create New Account</Text>
@@ -75,7 +74,6 @@ export default function SignUp() {
         marginTop:50
       }}>
         <Text style={{
-          fontFamily:'outfit'
         }}>Full Name</Text>
         <TextInput
         style={styles.input}
@@ -88,7 +86,6 @@ export default function SignUp() {
         marginTop:20
       }}>
         <Text style={{
-          fontFamily:'outfit'
         }}>Email</Text>
         <TextInput
         style={styles.input}
@@ -100,7 +97,6 @@ export default function SignUp() {
         marginTop:20
       }}>
         <Text style={{
-          fontFamily:'outfit'
         }}>Password</Text>
         <TextInput
         secureTextEntry={true}
@@ -148,6 +144,5 @@ const styles = StyleSheet.create({
     borderWidth:1,
     borderRadius:15,
     borderColor:Colors.GRAY,
-    fontFamily:'outfit'
 }
 })

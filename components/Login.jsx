@@ -17,13 +17,11 @@ export default function Login() {
         <View style={styles.container}>
             <Text style={{
                 fontSize:30,
-                fontFamily:'outfit-bold',
                 textAlign:'center',
                 marginTop:10
             }}>AI Travel Planner</Text>
 
             <Text style={{
-                fontFamily:'outfit',
                 fontSize:17,
                 textAlign:'center',
                color:Colors.GRAY,
@@ -35,7 +33,6 @@ export default function Login() {
             >
                 <Text style={{color:Colors.WHITE,
                 textAlign:'center',
-                fontFamily:'outfit',
                 fontSize:17
                 }}>Get Started</Text>
             </TouchableOpacity>

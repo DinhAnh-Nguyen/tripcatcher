@@ -46,7 +46,6 @@ export default function SelectBudget() {
         height:'100%'
     }}>
       <Text style={{
-        fontFamily:'outfit-bold',
         fontSize:35,
         marginTop:20
       }}>
@@ -57,7 +56,6 @@ export default function SelectBudget() {
         marginTop:20
       }}>
         <Text style={{
-            fontFamily:'outfit-bold',
             fontSize:20
         }}>Choose sepending habits for your trip</Text>
      
@@ -86,7 +84,6 @@ export default function SelectBudget() {
         <Text style={{
           textAlign:'center',
           color:Colors.WHITE,
-          fontFamily:'outfit-medium',
           fontSize:20
         }}>Continue</Text>
      

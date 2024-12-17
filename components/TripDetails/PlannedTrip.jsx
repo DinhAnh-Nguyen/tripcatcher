@@ -10,14 +10,12 @@ export default function PlannedTrip({details}) {
     }}>
       <Text style={{
         fontSize:20,
-        fontFamily:'outfit-bold'
       }}>🏕️ Plan Details</Text>
 
      
       {Object.entries(details).reverse().map(([day,details])=>(
         <View >
             <Text style={{
-                fontFamily:'outfit-medium',
                 fontSize:20,
                 marginTop:20
             }}>{day.charAt(0).toUpperCase()+day.slice(1)}</Text>

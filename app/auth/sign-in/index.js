@@ -59,18 +59,15 @@ export default function SignIn() {
         <Ionicons name="arrow-back" size={24} color="black" />
       </TouchableOpacity>
       <Text style={{
-        fontFamily:'outfit-bold',
         fontSize:30,
         marginTop:30
       }}>Let's Sign You In</Text>
        <Text style={{
-        fontFamily:'outfit',
         fontSize:30,
         color:Colors.GRAY,
         marginTop:20
       }}>Welcome Back</Text>
        <Text style={{
-        fontFamily:'outfit',
         fontSize:30,
         color:Colors.GRAY,
         marginTop:10
@@ -81,7 +78,6 @@ export default function SignIn() {
         marginTop:50
       }}>
         <Text style={{
-          fontFamily:'outfit'
         }}>Email</Text>
         <TextInput
         style={styles.input}
@@ -93,7 +89,6 @@ export default function SignIn() {
         marginTop:20
       }}>
         <Text style={{
-          fontFamily:'outfit'
         }}>Password</Text>
         <TextInput
         secureTextEntry={true}
@@ -141,6 +136,5 @@ const styles = StyleSheet.create({
       borderWidth:1,
       borderRadius:15,
       borderColor:Colors.GRAY,
-      fontFamily:'outfit'
   }
 })
