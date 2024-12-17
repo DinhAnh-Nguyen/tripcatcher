@@ -1,15 +1,16 @@
-import { View, Text, Image, Button, StyleSheet, Alert } from "react-native";
+import { View, Text, Image, StyleSheet } from "react-native";
 import React, { useEffect, useState } from "react";
 import { auth } from "./../../configs/FirebaseConfig";
+import { Colors } from "@/constants/Colors";
 
 export default function Profile() {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
-    const currentUser = auth.currentUser; // Get current authenticated user
+    const currentUser = auth.currentUser;
     if (currentUser) {
       setUser({
-        name: currentUser.displayName || "No name set",
+        name: currentUser.displayName || "User",
         email: currentUser.email,
         avatar: "https://i.pravatar.cc/150",
       });
@@ -42,7 +43,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#f8f9fa",
+    backgroundColor: Colors.WHITE,
     padding: 20,
   },
   avatar: { width: 120, height: 120, borderRadius: 60, marginBottom: 20 },

@@ -39,7 +39,7 @@ export default function SelectTraveler() {
       <Text style={{
         fontSize:35,
         marginTop:20
-      }}>Who's Traveling </Text>
+      }}>Who's Travelling </Text>
 
       <View style={{
 
@@ -47,7 +47,7 @@ export default function SelectTraveler() {
       }}>
         <Text style={{
           fontSize:23
-        }}>Choose your traveles</Text>
+        }}>How many friends?</Text>
 
         <FlatList
           data={SelectTravelesList}

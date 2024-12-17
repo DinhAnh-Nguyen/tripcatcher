@@ -64,37 +64,19 @@ export default function SignIn() {
       <Text
         style={{
           fontSize: 30,
-          marginTop: 30,
+          marginTop: "35%",
+          textAlign: "center",
         }}
       >
-        Let's Sign You In
+        Sign In
       </Text>
-      <Text
-        style={{
-          fontSize: 30,
-          color: Colors.GRAY,
-          marginTop: 20,
-        }}
-      >
-        Welcome Back
-      </Text>
-      <Text
-        style={{
-          fontSize: 30,
-          color: Colors.GRAY,
-          marginTop: 10,
-        }}
-      >
-        You've been missed!
-      </Text>
-
       {/* Email  */}
       <View
         style={{
           marginTop: 50,
         }}
       >
-        <Text style={{}}>Email</Text>
+        <Text style={{ marginBottom: 5 }}>Email</Text>
         <TextInput
           style={styles.input}
           onChangeText={(value) => setEmail(value)}
@@ -107,7 +89,7 @@ export default function SignIn() {
           marginTop: 20,
         }}
       >
-        <Text style={{}}>Password</Text>
+        <Text style={{ marginBottom: 5 }}>Password</Text>
         <TextInput
           secureTextEntry={true}
           style={styles.input}
@@ -166,5 +148,6 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderRadius: 15,
     borderColor: Colors.GRAY,
+    marginBottom: 5,
   },
 });
