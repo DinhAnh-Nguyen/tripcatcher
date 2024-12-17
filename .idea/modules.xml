@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/tripcatcher.iml" filepath="$PROJECT_DIR$/.idea/tripcatcher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/AI-Travel-Planner-App-main.iml" filepath="$PROJECT_DIR$/.idea/AI-Travel-Planner-App-main.iml" />
     </modules>
   </component>
 </project>
